@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        final int MAX_TRY_COUNT = 3;
+        final int MAX_TRY_COUNT = 10;
         List<String> userInputs = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         AbstractGame nGame = null;
