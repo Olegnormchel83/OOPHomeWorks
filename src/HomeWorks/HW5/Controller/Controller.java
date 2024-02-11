@@ -97,6 +97,10 @@ public class Controller {
         _studyGroupService.studyGroupInfo(prepodavatel, group);
     }
     private void getInfoAboutCharacter(Character character) {
-        _studyGroupService.characterRead(character);
+        if (character instanceof Prepodavatel) {
+            _viewer.printPrepodavatel((Prepodavatel) character);
+        } else if (character instanceof Uchenyk) {
+            _viewer.printUchenyk((Uchenyk) character);
+        }
     }
 }
