@@ -12,18 +12,7 @@ public class DropMachine {
     }
 
     public void dropToys(int countToys) {
-        Random random = new Random();
-        int toyDropPercent = 0;
-        int randomDropChance = 0;
-        Toy droppedToy;
-        for (int i = 0; i < countToys; i++) {
-            randomDropChance = random.nextInt(0, 100);
-            for (Toy toy : toyCollection) {
-                if (randomDropChance <= toy.getDropPercent()) {
 
-                }
-            }
-        }
     }
 
     public void addToy(Toy toy) {

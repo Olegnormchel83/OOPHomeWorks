@@ -11,7 +11,6 @@ public class Main {
         dropMachine.addToy(robot);
         dropMachine.addToy(doll);
 
-        dropMachine.dropToys(10);
     }
 
     private static void init() {
