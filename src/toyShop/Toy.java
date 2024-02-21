@@ -1,12 +1,16 @@
 package toyShop;
 
 import lombok.Getter;
+import lombok.Setter;
 
 public class Toy implements Comparable {
     private int id;
+
+    @Getter
     private String name;
 
     @Getter
+    @Setter
     private int dropPercent;
 
     public Toy(int id, String name, int dropPercent) {
@@ -15,13 +19,12 @@ public class Toy implements Comparable {
         this.dropPercent = dropPercent;
     }
 
+    public Toy() {
+    }
+
     @Override
     public String toString() {
-        return "Toy{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", dropPercent=" + dropPercent +
-                '}';
+        return STR."\{name}";
     }
 
     @Override
