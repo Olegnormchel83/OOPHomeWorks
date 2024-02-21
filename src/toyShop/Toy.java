@@ -2,7 +2,7 @@ package toyShop;
 
 import lombok.Getter;
 
-public class Toy {
+public class Toy implements Comparable {
     private int id;
     private String name;
 
@@ -22,5 +22,10 @@ public class Toy {
                 ", name='" + name + '\'' +
                 ", dropPercent=" + dropPercent +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }
